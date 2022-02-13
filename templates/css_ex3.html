@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100rem;
+
+        }
+        .box-wrapper {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        .box {
+            background-color: rgb(30, 153, 210);
+            width: 300px;
+            height: 200px;
+            padding: 1rem;
+            position: relative;
+            border-radius: .5rem;
+        }
+        .icon {
+            position: absolute;
+            right: -2rem;
+            top: -2rem;
+            background-color: rgb(30, 87, 210);
+            box-shadow: 1px 1px 1px #333;
+            border-radius: 50%;
+        }
+    </style>
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+</head>
+
+<body>
+    <div class="box-wrapper">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, doloribus.</p>
+
+            <lord-icon class="icon" src="https://cdn.lordicon.com/gmzxduhd.json" trigger="loop-on-hover"
+                colors="primary:#b4b4b4,secondary:#e8e230" style="width:80px;height:80px">
+            </lord-icon>
+        </div>
+    </div>
+</body>
+
+</html>

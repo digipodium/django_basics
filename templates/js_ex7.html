@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form_area {
+            width: 50%;
+            margin: auto;
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form_area">
+        <form>
+            name<input type="text" name="username" placeholder="Your Name" id="username">
+            Email<input type="email" name="username" placeholder="Your Email" id="email">
+            address<textarea name="address" id="address" rows="7" cols="20"></textarea>
+            <input type="reset" value="clear"><button type="submit">Analyse Details</button>
+        </form>
+    </div>
+    <div class="output">
+    </div>
+    <script>
+        let output = document.querySelector('.output')
+        document.querySelector('button[type="submit"]').addEventListener('click', (event) => {
+            event.preventDefault() // used in form to stop it from loading next page
+            var uname = document.querySelector('#username').value
+            var email = document.querySelector('#email').value
+            var addr = document.querySelector('#address').value
+            var content = `Your Name is <b>${uname}</b><br>Your Email address is ${email}<br>You live at ${addr}`
+            output.innerHTML = content
+        })
+    </script>
+</body>
+</html>

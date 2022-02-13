@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Example</title>
+</head>
+
+<body>
+    <h1>Welcome to Javascript Loop Example </h1>
+    <button onclick="runcode()">Test loop</button>
+    <button onclick="checklist()">Traversing List</button>
+    <script>
+        runcode = () => {
+            for (let i = 0; i < 10; i++) {
+                console.log(i);
+            }
+        }
+        checklist = () => {
+            let fruits = ["apple", "banana", "orange"];
+            // for (let item of fruits) {
+            //     console.log(item);
+            // }
+            fruits.forEach(item => {
+                console.log(`do you want to buy ${item}?`)                     //tilde 
+            });
+        }
+    </script>
+</body>
+
+</html>

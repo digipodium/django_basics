@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Example</title>
+</head>
+
+<body>
+    <h1>Welcome to Javascript Function Example </h1>
+    <button onclick="help()">Help button</button>
+    <button onclick="add2(10,5)">Add 10 + 5</button>
+    <button onclick="multiply(10,5)">Multiply 10 and 5</button>
+    <script>
+        // classic
+        function help() {
+            alert("This is a help message");
+        }
+
+        // variable style function
+        add2 = function (a, b) {
+            alert(a + b);
+        }
+
+        // arrow function
+        multiply = (a, b) => {
+            alert(a * b);
+        }
+    </script>
+</body>
+
+</html>

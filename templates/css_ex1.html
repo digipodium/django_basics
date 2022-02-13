@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 0.9rem;
+            position: relative;
+            padding: 2rem;
+        }
+
+        #special {
+            color: #163264;
+            font-weight: 700;
+        }
+
+        .info {
+            line-height: 1.8rem;
+            outline: 1px solid #b3b7be;
+            padding: 2rem;
+        }
+
+        p.info {
+            color: red;
+        }
+
+        div.info {
+            color: blue
+        }
+
+        p.info:hover {
+            background-color: #eeee81;
+        }
+
+        p::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 22px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #5ee45988;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Welcome to Jumanji
+    </h1>
+    <!-- p>lorem20 -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore delectus numquam itaque aperiam rerum
+        perspiciatis iste iusto deleniti ab et!</p>
+    <!-- p#special>lorem40 -->
+    <p id="special">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sequi tenetur cupiditate nam
+        aspernatur commodi neque dolores facilis vel? Nostrum odit magnam sequi natus ex consequatur, eveniet reiciendis
+        dolor sunt. Quasi commodi at perspiciatis dolores, labore maxime eligendi ducimus rem.</p>
+    <!-- p.info*2>lorem20 -->
+    <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis molestias dicta maxime delectus
+        reprehenderit minima quaerat quae mollitia non. Facere?</p>
+    <p class="info">Repellendus vel quisquam quis incidunt id possimus nam, nulla consectetur, eveniet ex rem. Odio
+        porro facere qui eum molestiae nostrum?</p>
+    <div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit est qui sunt
+        exercitationem ut veniam atque doloremque perspiciatis, quia dolor molestiae? Quidem nisi quisquam
+        exercitationem aliquam voluptatum maxime, dolor voluptates!</div>
+</body>
+
+</html>

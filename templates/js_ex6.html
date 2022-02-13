@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switch</title>
+
+    <style>
+        #hero {
+            width: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="imgbox">
+            <img id="hero"
+                src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGFuaW1hbHN8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=10"
+                alt="">
+            <h4>Click on image to change</h4>
+        </div>
+    </div>
+    
+    <script>
+        randomIndex = (size) => {
+            return Math.floor(Math.random() * size)
+        }
+        let imglist = [
+            'https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGFuaW1hbHN8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=10',
+            'https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGFuaW1hbHN8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=10',
+            'https://images.unsplash.com/photo-1504006833117-8886a355efbf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFuaW1hbHN8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=10',
+            'https://images.unsplash.com/photo-1444464666168-49d633b86797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8YW5pbWFsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=10',
+            'https://images.unsplash.com/photo-1456926631375-92c8ce872def?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YW5pbWFsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=10',
+            'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8YW5pbWFsc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=10'
+        ]
+        let im = document.querySelector('#hero')
+        im.addEventListener('click', () => {
+            im.src = imglist[randomIndex(6)]
+        })
+    </script>
+</body>
+
+</html>
